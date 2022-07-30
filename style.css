@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Rose", cursive;
+}
+
+body{
+  background-image: url(./assets/pexels-maxyne-barcel-10402282\ 1.png);
+  background-position: top;
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  position: relative;
+}
+body::after{
+  background-color: #191f30bf;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+}
+
+/* ------------------------------ */
+/* ---------- NAVBAR ------------ */
+/* ------------------------------ */
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  z-index: 999999999;
+}
+nav.navbar {
+  padding: 30px 0;
+  position: relative;
+}
+nav.navbar div {
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+nav.navbar div:nth-child(2) {
+  position: absolute;
+  left: 30%;
+  bottom: 0;
+}
+nav.navbar div:last-child {
+  position: absolute;
+  left: inherit;
+  right: 0;
+}
+nav.navbar div img {
+  width: 120px;
+}
+
+nav.navbar ul.list {
+  display: flex;
+}
+nav.navbar ul.list li.list-item {
+  margin: 0 30px;
+  list-style: none;
+  transition: 0.3s all ease;
+  position: relative;
+  color: #ffc233;
+}
+nav.navbar ul.list li.list-item:after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  left: 10%;
+  bottom: -4px;
+  transition: 0.3s all ease;
+}
+nav.navbar ul.list li.list-item:hover {
+  font-weight: 800;
+  font-size: 18px;
+}
+nav.navbar ul.list li.list-item:hover:after {
+  width: 80%;
+}
+button.button-small {
+  background: #ff505f;
+  border: none;
+  padding: 10px 30px;
+  font-size: 16px;
+  color: #fff;
+}
+
+
+
+
+/* ------------------------------ */
+/* ---------- HERO ------------ */
+/* ------------------------------ */
+.hero {
+  width: 100%;
+  float: left;
+  padding-top: 60px;
+  text-align: center;
+}
+.hero h1.hero-heading {
+  font-size: 110px;
+  line-height: 100px;
+  font-weight: 900;
+  color: #ffc233;
+}
+.bottom {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
+.bottom img{
+  width: 140px;
+}
+button.button-large {
+  padding: 15px 60px;
+  color: #fff;
+  background: #ff5060;
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: 40px;
+  border: none;
+}
